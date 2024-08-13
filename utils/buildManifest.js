@@ -5,7 +5,7 @@ module.exports = function (manifest_version) {
     author: pkg.author,
     content_scripts: [
       {
-        matches: ["https://*.twitter.com/*"],
+        matches: ["https://*.twitter.com/*", "https://*.x.com/*"],
         css: ["content.css"],
         js: ["content.js"],
         run_at: "document_end",

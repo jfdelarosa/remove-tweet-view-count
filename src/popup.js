@@ -1,10 +1,10 @@
 const tweet = `Just installed this new Chrome extension that removes the view count on tweets.
-Twitter looks so much cleaner now!
+X looks so much cleaner now!
 https://chrome.google.com/webstore/detail/twitter-view-count-remove/kacedphpmelngnhgodfbnemedkbbiajj
-#ChromeExtension #Twitter`;
+#ChromeExtension #Twitter #x`;
 
 const link = document.querySelector("a");
-link.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+link.href = `https://x.com/intent/post?text=${encodeURIComponent(
   tweet
 )}`;
 

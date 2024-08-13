@@ -5,7 +5,7 @@ chrome.storage.onChanged.addListener(async (changes) => {
     }
 
     const tabs = await chrome.tabs.query({
-      url: "https://*.twitter.com/*",
+      url: ["https://*.twitter.com/*", "https://*.x.com/*"],
     });
 
     tabs.forEach(async (tab) => {
